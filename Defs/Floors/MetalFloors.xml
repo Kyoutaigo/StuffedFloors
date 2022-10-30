@@ -44,6 +44,7 @@
 			<Cleanliness>0.2</Cleanliness>
 		</statBases>
 		<stuffCost>14</stuffCost>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 		<researchPrerequisites>
 			<li>Machining</li>
 		</researchPrerequisites>
