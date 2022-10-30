@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Using conditionals as a faster option to PatchOperationFindMod -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- Royalty -->
+				<!-- Nothing needed for Royalty -->
+				
+				<!-- Ideology -->
+				<li Class="PatchOperationConditional" MayRequire="ludeon.rimworld.ideology">
+					<xpath>Defs</xpath>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<li Class="PatchOperationRemove">
+								<xpath>Defs/MemeDef[defName="Transhumanist"]/addDesignators/li[text()="Tile_Transhumanist"]</xpath>		
+							</li>
+							<li Class="PatchOperationRemove">
+								<xpath>Defs/StyleCategoryDef[defName="Spikecore"]/addDesignators/li[text()="Plates_Spikecore"]</xpath>		
+							</li>
+							<li Class="PatchOperationRemove">
+								<xpath>Defs/StyleCategoryDef[defName="Totemic"]/addDesignators/li[text()="Boards_Totemic"]</xpath>	
+							</li>
+							
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/MemeDef[defName="Transhumanist"]/addDesignatorGroups</xpath>
+								<value>
+									<li>StuffedTechistMetalTile</li>
+								</value>		
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/StyleCategoryDef[defName="Spikecore"]/addDesignatorGroups</xpath>
+								<value>
+									<li>StuffedSpikecoreMetalPlates</li>
+								</value>		
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/StyleCategoryDef[defName="Totemic"]/addDesignatorGroups</xpath>
+								<value>
+									<li>StuffedTotemicWoodBoards</li>
+								</value>		
+							</li>
+							
+							<li Class="PatchOperationReplace">
+								<xpath>Defs/StyleCategoryDef[defName="Morbid"]/addDesignatorGroups/li[text()="Floor_Morbid_Stone"]</xpath>
+								<value>
+									<li>StuffedMorbidStoneTile</li>
+								</value>		
+							</li>		
+							<li Class="PatchOperationReplace">
+								<xpath>Defs/StyleCategoryDef[defName="Spikecore"]/addDesignatorGroups/li[text()="Floor_Spikecore_Tile"]</xpath>
+								<value>
+									<li>StuffedSpikecoreStoneTile</li>
+								</value>		
+							</li>		
+							<li Class="PatchOperationReplace">
+								<xpath>Defs/StyleCategoryDef[defName="Totemic"]/addDesignatorGroups/li[text()="Floor_Totemic_Tile"]</xpath>
+								<value>
+									<li>StuffedTotemicStoneTiles</li>
+								</value>		
+							</li>
+						
+						</operations>
+					</match>
+				</li>
+				
+				<!-- Biotech -->
+				
+			</operations>
+		</match>
+	</Operation>
+</Patch>
