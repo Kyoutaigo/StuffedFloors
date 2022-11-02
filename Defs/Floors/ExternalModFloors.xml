@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- In case of multiple mods adding the same floor use: MayRequireAnyOf="Mod1.id,Mod2.id,xid.etc" -->
+	
+	<!--  Vanilla Furniture Expanded Architect (MayRequire="vanillaexpanded.vfearchitect")-->
+	<!-- Wood -->
+	<StuffedFloors.FloorTypeDef ParentName="StuffedFloorsWoodPrettyBase" MayRequire="vanillaexpanded.vfearchitect">
+		<defName>StuffedWoodFloorVEHerringbone</defName>
+		<label>fine herringbone parquet</label>
+		<description>Beautifully laid down wooden flooring for that posh, fancy feeling.</description>
+		<texturePath>Terrains/Parquet</texturePath>
+		<obsoletes>
+			<li>VFEArch_WoodenParquet</li>
+			<li>VFEArch_WoodenParquetWalnut</li>
+			<li>VFEArch_WoodenParquetBirch</li>
+			<li>VFEArch_WoodenParquetMahogany</li>
+		</obsoletes>
+	</StuffedFloors.FloorTypeDef>
+	<!-- Requires Royalty -->
+	<StuffedFloors.FloorTypeDef ParentName="StuffedFloorsWoodRoyalBase" MayRequire="vanillaexpanded.vfearchitect,ludeon.rimworld.royalty">
+		<defName>StuffedWoodFloorVEVersailles</defName>
+		<label>versailles parquet</label>
+		<description>Beautiful wooden parquet, made with no compromises, for expressing economic status. Slow to construct.</description>
+		<texturePath>Terrains/FineWoodenFloor</texturePath>
+		<obsoletes>
+			<li>VFEArch_FineWoodenFloor</li>
+			<li>VFEArch_FineWoodenFloorWalnut</li>
+			<li>VFEArch_FineWoodenFloorBirch</li>
+			<li>VFEArch_FineWoodenFloorMahogany</li>
+		</obsoletes>
+	</StuffedFloors.FloorTypeDef>
+	<!-- Stone -->
+	<StuffedFloors.FloorTypeDef ParentName="StuffedFloorsStoneBasicBase" MayRequire="vanillaexpanded.vfearchitect">
+		<defName>StuffedStoneVECobblestone</defName>
+		<label>cobblestone floor</label>
+		<description>Random-size stone tiles for a rustical, castle feeling. Take less time to construct than ordinary stone tiles and don’t require stone cutting expertise, but lack the beauty of the polished design.</description>
+		<texturePath>Terrains/Cobblestone</texturePath>
+		<obsoletes>
+			<li>VFEArch_CobblestoneFloorSandstone</li>
+			<li>VFEArch_CobblestoneFloorGranite</li>
+			<li>VFEArch_CobblestoneFloorLimestone</li>
+			<li>VFEArch_CobblestoneFloorSlate</li>
+			<li>VFEArch_CobblestoneFloorMarble</li>
+		</obsoletes>
+	</StuffedFloors.FloorTypeDef>
+	<StuffedFloors.FloorTypeDef ParentName="StuffedFloorsStonePrettyBase" MayRequire="vanillaexpanded.vfearchitect">
+		<defName>StuffedStoneVETempleSlabs</defName>
+		<label>temple slabs</label>
+		<description>Large slabs of stone laid at random for that temple-like look. Beautiful to look at.</description>
+		<texturePath>Terrains/StoneSlabs</texturePath>
+		<obsoletes>
+			<li>VFEArch_SlabsSandstone</li>
+			<li>VFEArch_SlabsGranite</li>
+			<li>VFEArch_SlabsLimestone</li>
+			<li>VFEArch_SlabsSlate</li>
+			<li>VFEArch_SlabsMarble</li>
+		</obsoletes>
+	</StuffedFloors.FloorTypeDef>
+	<StuffedFloors.FloorTypeDef ParentName="StuffedFloorsStoneEpicBase" MayRequire="vanillaexpanded.vfearchitect">
+		<defName>StuffedStoneVEPolishedFloor</defName>
+		<label>polished stone floor</label>
+		<description>Exquisite, polished stone tiles for an elegant, mansion-like look. They are incredibly beautiful to look at.</description>
+		<texturePath>Terrains/PolishedStoneFloor</texturePath>
+		<obsoletes>
+			<li>VFEArch_PolishedStoneFloorSandstone</li>
+			<li>VFEArch_PolishedStoneFloorGranite</li>
+			<li>VFEArch_PolishedStoneFloorLimestone</li>
+			<li>VFEArch_PolishedStoneFloorSlate</li>
+			<li>VFEArch_PolishedStoneFloorMarble</li>
+		</obsoletes>
+	</StuffedFloors.FloorTypeDef>
+	<!-- Metal -->
+	<!-- Requires Royalty -->
+	<StuffedFloors.FloorTypeDef ParentName="StuffedFloorsMetalRoyalBase" MayRequire="vanillaexpanded.vfearchitect,ludeon.rimworld.royalty">
+		<defName>StuffedMetalVERoyalTile</defName>
+		<label>exquisite tile</label>
+		<description>Exquisite metal tiles, made with no compromises, for expressing economic status. Slow to construct.</description>
+		<texturePath>Terrains/FineMetalTile</texturePath>
+		<obsoletes>
+			<li>VFEArch_FineSteelTile</li>
+			<li>VFEArch_FineSilverTile</li>
+			<li>VFEArch_FineGoldTile</li>
+		</obsoletes>
+	</StuffedFloors.FloorTypeDef>
+	
+	<!-- Rimefeller (MayRequire="dubwise.rimefeller")-->
+	<StuffedFloors.FloorTypeDef ParentName="StuffedFloorsStoneRoyalBase"  MayRequire="dubwise.rimefeller">
+		<defName>StuffedStoneDiagonalTilesRF</defName>
+		<label>diagonal tiles</label>		
+		<description>A regal floor made of exquisitly polished stone plates, lined with darker cut stone, for expressing economic status. Slow to construct.</description>
+		<texturePath>Rimefeller/Terrain/TilesDiagonal</texturePath>
+	</StuffedFloors.FloorTypeDef>
+	<StuffedFloors.FloorTypeDef ParentName="StuffedFloorsWoodRoyalBase"  MayRequire="dubwise.rimefeller">
+		<defName>StuffedWoodFloorParquetVersaillesRF</defName>
+		<label>parquet versailles</label>
+		<description>A regal floor made of intricately cut around precisely-measured wooden tiles, made with no compromises, for expressing economic status. Slow to construct.</description>
+		<texturePath>Rimefeller/Terrain/Wood_ParquetVersailles</texturePath>
+		<obsoletes>
+			<li>Wood_ParquetVersailles</li>
+		</obsoletes>
+	</StuffedFloors.FloorTypeDef>
+	<StuffedFloors.FloorTypeDef ParentName="StuffedFloorsWoodPrettyBase"  MayRequire="dubwise.rimefeller">
+		<defName>StuffedWoodFloorParquetHerringRF</defName>
+		<label>parquet herringbone</label>
+		<description>A fancy floor made of fine, smoothed, wooden tiles laid in a stylish herringbone pattern.</description>
+		<texturePath>Rimefeller/Terrain/Wood_ParquetHerring</texturePath>
+		<obsoletes>
+			<li>Wood_ParquetHerring</li>
+		</obsoletes>
+	</StuffedFloors.FloorTypeDef>
+	
+</Defs>
