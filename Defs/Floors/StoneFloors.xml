@@ -8,7 +8,7 @@
 	<StuffedFloors.FloorTypeDef Name="StuffedFloorsStoneBasicBase" ParentName="StuffedFloorsStoneBase" Abstract="True">
 		<statBases>
 			<WorkToBuild>90</WorkToBuild>
-			<Beauty>0</Beauty>
+			<Beauty>0.4</Beauty>
 		</statBases>
 		<stuffCost>4</stuffCost>
 		<tags>
