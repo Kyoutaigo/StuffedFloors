@@ -27,7 +27,7 @@
 								<li>VFEArch_WoodenParquetMahogany</li>
 							</obsoletes>
 					</StuffedFloors.FloorTypeDef>
-					<StuffedFloors.FloorTypeDef ParentName="StuffedFloorsWoodRoyalBase">
+					<StuffedFloors.FloorTypeDef ParentName="StuffedFloorsWoodRoyalBase" MayRequire="ludeon.rimworld.royalty">
 						<defName>StuffedWoodFloorVEVersailles</defName>
 						<label>versailles parquet</label>		
 						<description>Beautiful wooden parquet, made with no compromises, for expressing economic status. Slow to construct.</description>
