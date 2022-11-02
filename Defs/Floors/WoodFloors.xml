@@ -105,6 +105,10 @@
 			<li>WoodPlankFloor_Acacia</li>
 			<li>WoodPlankFloor_Palm</li>
 			<li>WoodPlankFloor_RedMaple</li>
+			<!-- VFE Architect -->
+			<li>VFEArch_WoodPlankFloorWalnut</li>
+			<li>VFEArch_WoodPlankFloorBirch</li>
+			<li>VFEArch_WoodPlankFloorMahogany</li>
 		</obsoletes>
 	</StuffedFloors.FloorTypeDef>
 	
