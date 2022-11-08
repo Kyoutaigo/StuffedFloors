@@ -64,7 +64,7 @@
 							<li Class="PatchOperationAdd">
 								<xpath>Defs/MemeDef[defName="Transhumanist"]/addDesignatorGroups</xpath>
 								<value>
-									<li>StuffedTranshumanistFabricCarpet</li>
+									<li>StuffedTechistFabricCarpet</li>
 								</value>
 							</li>
 							<li Class="PatchOperationAdd">
