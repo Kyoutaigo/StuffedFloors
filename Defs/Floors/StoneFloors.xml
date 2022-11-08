@@ -12,7 +12,6 @@
 		</statBases>
 		<stuffCost>4</stuffCost>
 		<tags>
-			<li>Road</li>
 			<li>Floor</li>
 		</tags>
 	</StuffedFloors.FloorTypeDef>
@@ -44,7 +43,7 @@
 	<StuffedFloors.FloorTypeDef Name="StuffedFloorsStoneRoyalBase" ParentName="StuffedFloorsStoneBase" Abstract="True">
 		<statBases>
 			<WorkToBuild>905</WorkToBuild>
-			<Beauty>3</Beauty>
+			<Beauty>3.4</Beauty>
 		</statBases>
 		<stuffCost>10</stuffCost>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
@@ -87,6 +86,9 @@
 		<label>rough cobblestones</label>
 		<description>A simple floor made of roughly placed cobblestones.</description>
 		<texturePath>Floors/Stone/TileStone</texturePath>
+		<tags>
+			<li>Road</li>
+		</tags>
 	</StuffedFloors.FloorTypeDef>
 	<!-- Vanilla  -->
 	<StuffedFloors.FloorTypeDef ParentName="StuffedFloorsStonePoorBase">
@@ -99,11 +101,14 @@
 			<li>Road</li>
 		</tags>
 		<obsoletes>
+			<!-- Vanilla -->
 			<li>FlagstoneSandstone</li>
 			<li>FlagstoneGranite</li>
 			<li>FlagstoneLimestone</li>
 			<li>FlagstoneSlate</li>
 			<li>FlagstoneMarble</li>
+			<!-- Alpha Memes -->
+			<li>AM_FlagstonePristineLimestone</li>
 		</obsoletes>
 	</StuffedFloors.FloorTypeDef>
 	
@@ -173,6 +178,9 @@
 		<label>slabs</label>
 		<description>A simple floor made of stone slabs, for that neolithic vibe.</description>
 		<texturePath>Floors/Stone/StoneSlabs</texturePath>
+		<tags>
+			<li>Road</li>
+		</tags>
 		<obsoletes>
 			<li>FloorStoneSlabsSandstone</li>
 			<li>FloorStoneSlabsGranite</li>
@@ -188,6 +196,9 @@
 		<label>staggered tiles</label>
 		<description>A simple floor made of stone tiles with rounded corners laid in a staggered pattern.</description>
 		<texturePath>Floors/Stone/StoneStaggered</texturePath>
+		<tags>
+			<li>Road</li>
+		</tags>
 		<obsoletes>
 			<li>FloorStoneStaggeredSandstone</li>
 			<li>FloorStoneStaggeredGranite</li>
@@ -203,6 +214,9 @@
 		<label>alternating tiles</label>
 		<description>A simple floor made of stone flooring with rounded bricks laid in a simple but pleasant alternating pattern.</description>
 		<texturePath>Floors/Stone/StoneAlternating</texturePath>
+		<tags>
+			<li>Road</li>
+		</tags>
 		<obsoletes>
 			<li>FloorStoneAlternatingSandstone</li>
 			<li>FloorStoneAlternatingGranite</li>
@@ -323,6 +337,9 @@
 		<label>cobblestones</label>
 		<description>A simple floor made of cobblestone seamlessly put together from smaller rocks</description>
 		<texturePath>Floors/Stone/CobblestoneFloor</texturePath>
+		<tags>
+			<li>Road</li>
+		</tags>
 		<obsoletes>
 			<li>EXF_CobbleFloorSandstone</li>
 			<li>EXF_CobbleFloorGranite</li>
@@ -364,6 +381,8 @@
 			<li>TileYellow</li>
 			<li>TileGreen</li>
 			<li>TilePurple</li>
+			<!-- Alpha Memes -->
+			<li>AM_TilePristineLimestone</li>
 		</obsoletes>
 	</StuffedFloors.FloorTypeDef>
 	

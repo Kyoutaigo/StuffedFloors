@@ -15,6 +15,15 @@
 			<li>FineTileMarble</li>
 		</obsoletes>
 	</StuffedFloors.FloorTypeDef>
+	<StuffedFloors.FloorTypeDef ParentName="StuffedFloorsFabricRoyalBase" MayRequire="ludeon.rimworld.royalty">
+		<defName>StuffedFabricFineCarpet</defName>
+		<label>fine carpet</label>
+		<description>A royal carpet, made with no compromises, for expressing economic status. Slow to construct.</description>
+		<texturePath>Terrain/Surfaces/CarpetFine</texturePath>
+		<obsoletes>
+			<!-- vanilla -->
+		</obsoletes>
+	</StuffedFloors.FloorTypeDef>
 	
 	
 	<!-- Ideology (ludeon.rimworld.ideology) -->
@@ -39,6 +48,29 @@
 		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</StuffedFloors.FloorTypeDef>
+	<StuffedFloors.FloorTypeDef Name="StuffedFloorsFabricIdeologyBase" ParentName="StuffedFloorsFabricRoyalBase" Abstract="True" MayRequire="ludeon.rimworld.ideology">
+		<statBases>
+			<StyleDominance>1</StyleDominance>
+		</statBases>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</StuffedFloors.FloorTypeDef>
+	
+	<StuffedFloors.FloorTypeDef Name="StuffedFloorsWoodIdeologyBasePretty" ParentName="StuffedFloorsWoodPrettyBase" Abstract="True" MayRequire="ludeon.rimworld.ideology">
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+	</StuffedFloors.FloorTypeDef>
+	<StuffedFloors.FloorTypeDef Name="StuffedFloorsStoneIdeologyBasePretty" ParentName="StuffedFloorsStonePrettyBase" Abstract="True" MayRequire="ludeon.rimworld.ideology">
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+	</StuffedFloors.FloorTypeDef>
+	<StuffedFloors.FloorTypeDef Name="StuffedFloorsMetalIdeologyBasePretty" ParentName="StuffedFloorsMetalPrettyBase" Abstract="True" MayRequire="ludeon.rimworld.ideology">
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+	</StuffedFloors.FloorTypeDef>
+	<StuffedFloors.FloorTypeDef Name="StuffedFloorsFabricIdeologyBaseBasic" ParentName="StuffedFloorsFabricBasicBase" Abstract="True" MayRequire="ludeon.rimworld.ideology">
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+	</StuffedFloors.FloorTypeDef>
 	
 	<!-- Morbid -->
 	<StuffedFloors.FloorTypeDef ParentName="StuffedFloorsStoneIdeologyBase" MayRequire="ludeon.rimworld.ideology">
@@ -54,6 +86,14 @@
 			<li>Tile_MorbidSlate</li>
 			<li>Tile_MorbidMarble</li>
 		</obsoletes>
+	</StuffedFloors.FloorTypeDef>
+	<StuffedFloors.FloorTypeDef ParentName="StuffedFloorsFabricIdeologyBase" MayRequire="ludeon.rimworld.ideology">
+		<defName>StuffedMorbidFabricCarpet</defName>
+		<label>morbid carpet</label>
+		<description>Fine carpet in a morbid style.</description>
+		<texturePath>Terrain/Surfaces/MorbidCarpet</texturePath>
+		<dominantStyleCategory>Morbid</dominantStyleCategory>
+		<obsoletes />
 	</StuffedFloors.FloorTypeDef>
 	
 	<!-- Spikecore -->
@@ -117,6 +157,13 @@
 		<obsoletes>
 			<li>Tile_Transhumanist</li>
 		</obsoletes>
+	</StuffedFloors.FloorTypeDef>
+	<StuffedFloors.FloorTypeDef ParentName="StuffedFloorsFabricIdeologyBase" MayRequire="ludeon.rimworld.ideology">
+		<defName>StuffedTranshumanistFabricCarpet</defName>
+		<label>hex carpet</label>
+		<description>Fine carpet with a hexagonal pattern for that ultra-technological look.</description>
+		<texturePath>Terrain/Surfaces/HexCarpet</texturePath>
+		<obsoletes />
 	</StuffedFloors.FloorTypeDef>
 	
 	

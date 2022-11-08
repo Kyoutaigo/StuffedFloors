@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<StuffedFloors.FloorTypeDef Name="StuffedFloorsFabricBase" ParentName="StuffedFloorsBase" Abstract="True">
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<researchPrerequisites>
+			<li>CarpetMaking</li>
+		</researchPrerequisites>
+		<burnedDef>BurnedCarpet</burnedDef>
+	</StuffedFloors.FloorTypeDef>
+	<StuffedFloors.FloorTypeDef Name="StuffedFloorsFabricBasicBase" ParentName="StuffedFloorsFabricBase" Abstract="True">
+		<statBases>
+			<Beauty>2</Beauty>
+			<WorkToBuild>800</WorkToBuild>
+			<Flammability>0.32</Flammability>
+		</statBases>
+		<stuffCost>7</stuffCost>
+		<tags>
+			<li>Floor</li>
+		</tags>
+	</StuffedFloors.FloorTypeDef>
+	<StuffedFloors.FloorTypeDef Name="StuffedFloorsFabricPoorBase" ParentName="StuffedFloorsFabricBase" Abstract="True">
+		<statBases>
+			<Beauty>0.6</Beauty>
+			<WorkToBuild>500</WorkToBuild>
+			<Flammability>0.35</Flammability>
+		</statBases>
+		<stuffCost>4</stuffCost>
+		<tags>
+			<li>Floor</li>
+		</tags>
+	</StuffedFloors.FloorTypeDef>
+	<StuffedFloors.FloorTypeDef Name="StuffedFloorsFabricPrettyBase" ParentName="StuffedFloorsFabricBase" Abstract="True">
+		<statBases>
+			<Beauty>3</Beauty>
+			<WorkToBuild>1400</WorkToBuild>
+			<Flammability>0.32</Flammability>
+		</statBases>
+		<stuffCost>15</stuffCost>
+		<tags>
+			<li>Floor</li>
+			<li>FineFloor</li>
+		</tags>
+	</StuffedFloors.FloorTypeDef>
+	<StuffedFloors.FloorTypeDef Name="StuffedFloorsFabricRoyalBase" ParentName="StuffedFloorsFabricBase" Abstract="True">
+		<statBases>
+			<Beauty>4</Beauty>
+			<WorkToBuild>4000</WorkToBuild>
+			<Flammability>0.32</Flammability>
+		</statBases>
+		<stuffCost>35</stuffCost>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<tags>
+			<li>Floor</li>
+			<li>FineFloor</li>
+		</tags>
+	</StuffedFloors.FloorTypeDef>
+	<StuffedFloors.FloorTypeDef Name="StuffedFloorsFabricEpicBase" ParentName="StuffedFloorsFabricBase" Abstract="True">
+		<statBases>
+			<Beauty>5.5</Beauty>
+			<WorkToBuild>5500</WorkToBuild>
+			<Flammability>0.32</Flammability>
+		</statBases>
+		<stuffCost>35</stuffCost>
+		<costList>
+			<Gold>0.3</Gold>
+		</costList>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<tags>
+			<li>Floor</li>
+			<li>FineFloor</li>
+		</tags>
+	</StuffedFloors.FloorTypeDef>
+	
+	<!-- Vanilla -->
+	<StuffedFloors.FloorTypeDef ParentName="StuffedFloorsFabricBasicBase">
+		<defName>StuffedBasicCarpet</defName>
+		<label>plain carpet</label>
+		<description>A simple, but comfy carpet.</description>
+		<texturePath>Terrain/Surfaces/Carpet</texturePath>
+		<obsoletes>
+			<!-- To obsoletes the cloth carpets or not.. -->
+			
+			<!-- VFE A -->
+		</obsoletes>
+	</StuffedFloors.FloorTypeDef>
+	
+</Defs>

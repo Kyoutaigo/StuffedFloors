@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- In case of multiple mods adding the same floor use: MayRequireAnyOf="Mod1.id,Mod2.id,xid.etc" -->
+	<!-- In case of multiple mods adding the same floor use: MayRequireAnyOf="Mod1.id,Mod2.id,xid.etc"
+		 Provided they have the same texturePath -->
 	
 	<!--  Vanilla Furniture Expanded Architect (MayRequire="vanillaexpanded.vfearchitect")-->
 	<!-- Wood -->
@@ -84,12 +85,20 @@
 	</StuffedFloors.FloorTypeDef>
 	
 	<!-- Rimefeller (MayRequire="dubwise.rimefeller")-->
-	<StuffedFloors.FloorTypeDef ParentName="StuffedFloorsStoneRoyalBase"  MayRequire="dubwise.rimefeller">
+	<!-- Stone -->
+	<StuffedFloors.FloorTypeDef ParentName="StuffedFloorsStoneEpicBase"  MayRequire="dubwise.rimefeller">
 		<defName>StuffedStoneDiagonalTilesRF</defName>
-		<label>diagonal tiles</label>		
-		<description>A regal floor made of exquisitly polished stone plates, lined with darker cut stone, for expressing economic status. Slow to construct.</description>
+		<label>polished diagonal tiles</label>		
+		<description>A regal floor made of exquisitly polished mastercrafted stone plates, lined with darker cut stone, for expressing economic status. Slow to construct.</description>
 		<texturePath>Rimefeller/Terrain/TilesDiagonal</texturePath>
 	</StuffedFloors.FloorTypeDef>
+	<StuffedFloors.FloorTypeDef ParentName="StuffedFloorsStoneRoyalBase"  MayRequire="dubwise.rimefeller">
+		<defName>StuffedStoneDiamondTilesRF</defName>
+		<label>polished diamond tiles</label>		
+		<description>A regal floor made of mastercrafted polished stone plates, with darker cut center stones, for expressing economic status. Slow to construct.</description>
+		<texturePath>Rimefeller/Terrain/TilesDiamond</texturePath>
+	</StuffedFloors.FloorTypeDef>
+	<!-- Wood -->
 	<StuffedFloors.FloorTypeDef ParentName="StuffedFloorsWoodRoyalBase"  MayRequire="dubwise.rimefeller">
 		<defName>StuffedWoodFloorParquetVersaillesRF</defName>
 		<label>parquet versailles</label>
@@ -108,5 +117,160 @@
 			<li>Wood_ParquetHerring</li>
 		</obsoletes>
 	</StuffedFloors.FloorTypeDef>
+	
+	<!-- Dubs Bad Hygiene (MayRequire="dubwise.dubsbadhygiene")-->
+	<StuffedFloors.FloorTypeDef ParentName="StuffedFloorsMetalBasicBase"  MayRequire="dubwise.dubsbadhygiene">
+		<defName>StuffedMetalMosaicTileDBH</defName>
+		<label>mosaic tile</label>
+		<description>Metal tiles in a mosaic pattern, stylish in bathrooms or kitchens.</description>
+		<texturePath>DBH/Terrain/Mosaic</texturePath>
+		<obsoletes>
+			<li>DBHMosaicTile</li>
+		</obsoletes>
+	</StuffedFloors.FloorTypeDef>
+	<StuffedFloors.FloorTypeDef ParentName="StuffedFloorsStoneBasicBase"  MayRequire="dubwise.dubsbadhygiene">
+		<defName>StuffedStoneMosaicTileDBH</defName>
+		<label>mosaic tile</label>
+		<description>Carefully-cut and fit stone tiles in a mosaic pattern, stylish in bathrooms or kitchens.</description>
+		<texturePath>DBH/Terrain/Mosaic</texturePath>
+		<obsoletes>
+			<li>DBHMosaicSandstone</li>
+			<li>DBHMosaicGranite</li>
+			<li>DBHMosaicLimestone</li>
+			<li>DBHMosaicSlate</li>
+			<li>DBHMosaicMarble</li>
+		</obsoletes>
+	</StuffedFloors.FloorTypeDef>
+	
+	<!-- VE Memes and Structures (MayRequire="vanillaexpanded.vmemese,ludeon.rimworld.ideology")-->
+	<!-- Requires Ideology -->
+	
+	<!-- Corporate -->
+	<StuffedFloors.FloorTypeDef ParentName="StuffedFloorsStoneIdeologyBase"  MayRequire="vanillaexpanded.vmemese,ludeon.rimworld.ideology">
+		<defName>StuffedStoneCorporateTileVE</defName>
+		<label>fine corporate tile</label>
+		<description>Fine stone tiles in a corporate style for expressing economic status. Slow to construct.</description>
+		<texturePath>Terrain/Surfaces/VME_CorporateFineStoneTiles</texturePath>
+		<dominantStyleCategory>VME_Corporate</dominantStyleCategory>
+		<obsoletes>
+			<li>VME_CorporateFineTileSandstone</li>
+			<li>VME_CorporateFineTileGranite</li>
+			<li>VME_CorporateFineTileLimestone</li>
+			<li>VME_CorporateFineTileSlate</li>
+			<li>VME_CorporateFineTileMarble</li>
+		</obsoletes>
+	</StuffedFloors.FloorTypeDef>
+	
+	<!-- Shintao -->
+	<StuffedFloors.FloorTypeDef ParentName="StuffedFloorsStoneIdeologyBase"  MayRequire="vanillaexpanded.vmemese,ludeon.rimworld.ideology">
+		<defName>StuffedStoneShintaoTileVE</defName>
+		<label>shintao fine tile</label>
+		<description>Fine stone tiles in a shintao style for expressing economic status. Slow to construct.</description>
+		<texturePath>Terrain/Surfaces/VME_TaoistFineTile</texturePath>
+		<dominantStyleCategory>VME_Shintaoism</dominantStyleCategory>
+		<obsoletes>
+			<li>VME_ShintaoFineTileSandstone</li>
+			<li>VME_ShintaoFineTileGranite</li>
+			<li>VME_ShintaoFineTileLimestone</li>
+			<li>VME_ShintaoFineTileSlate</li>
+			<li>VME_ShintaoFineTileMarble</li>
+		</obsoletes>
+	</StuffedFloors.FloorTypeDef>
+	<StuffedFloors.FloorTypeDef ParentName="StuffedFloorsFabricIdeologyBaseBasic"  MayRequire="vanillaexpanded.vmemese,ludeon.rimworld.ideology">
+		<defName>StuffedFabricBasicShintaoCarpetVE</defName>
+		<label>shintao carpet</label>
+		<description>A nice plush carpet in a Shintaoist style.</description>
+		<texturePath>Terrain/Surfaces/VME_TaoistCarpet</texturePath>
+		<dominantStyleCategory>VME_Shintaoism</dominantStyleCategory>
+		<obsoletes />
+	</StuffedFloors.FloorTypeDef>
+	<StuffedFloors.FloorTypeDef ParentName="StuffedFloorsFabricIdeologyBase"  MayRequire="vanillaexpanded.vmemese,ludeon.rimworld.ideology">
+		<defName>StuffedFabricFineShintaoCarpetVE</defName>
+		<label>fine shintao carpet</label>
+		<description>A beautiful, sublime carpet with a mastercrafted Shintaoist style pattern.</description>
+		<texturePath>Terrain/Surfaces/VME_TaoistFineCarpet</texturePath>
+		<dominantStyleCategory>VME_Shintaoism</dominantStyleCategory>
+		<obsoletes />
+	</StuffedFloors.FloorTypeDef>
+	
+	
+	<!-- Alpha Memes (MayRequire="sarg.alphamemes,ludeon.rimworld.ideology")-->
+	<!-- Requires Ideology -->
+	
+	<!-- Jewish -->
+	<StuffedFloors.FloorTypeDef ParentName="StuffedFloorsStoneIdeologyBasePretty"  MayRequire="sarg.alphamemes,ludeon.rimworld.ideology">
+		<defName>StuffedStoneJewishTileAMPretty</defName>
+		<label>jewish tile</label>
+		<description>Carefully-cut and fit stone tiles in a Jewish style. They are pretty to look at, but they take a long time to lay.</description>
+		<texturePath>Terrain/Surfaces/AM_JewishTile</texturePath>
+		<dominantStyleCategory>AM_Jewish</dominantStyleCategory>
+		<obsoletes>
+			<li>AM_JewishTileSandstone</li>
+			<li>AM_JewishTileGranite</li>
+			<li>AM_JewishTileLimestone</li>
+			<li>AM_JewishTileSlate</li>
+			<li>AM_JewishTileMarble</li>
+		</obsoletes>
+	</StuffedFloors.FloorTypeDef>
+	<!-- Fine Jewish Tiles, needs color override -->
+	
+	<!-- Kemetic -->
+	<StuffedFloors.FloorTypeDef ParentName="StuffedFloorsStoneIdeologyBasePretty"  MayRequire="sarg.alphamemes,ludeon.rimworld.ideology">
+		<defName>StuffedStoneKemeticTileAMPretty</defName>
+		<label>kemetic tile</label>
+		<description>Carefully-cut and fit stone tiles in a Kemetic style. They are pretty to look at, but they take a long time to lay.</description>
+		<texturePath>Terrain/Surfaces/AM_KemeticStoneTiles</texturePath>
+		<dominantStyleCategory>AM_Kemetic</dominantStyleCategory>
+		<obsoletes>
+			<li>AM_KemeticTileSandstone</li>
+			<li>AM_KemeticTileGranite</li>
+			<li>AM_KemeticTileLimestone</li>
+			<li>AM_KemeticTileSlate</li>
+			<li>AM_KemeticTileMarble</li>
+			<li>AM_KemeticTilePristineLimestone</li>
+		</obsoletes>
+	</StuffedFloors.FloorTypeDef>
+	<StuffedFloors.FloorTypeDef ParentName="StuffedFloorsStoneIdeologyBase"  MayRequire="sarg.alphamemes,ludeon.rimworld.ideology">
+		<defName>StuffedStoneKemeticTileAM</defName>
+		<label>fine kemetic tile</label>
+		<description>Fine stone tiles in a Kemetic style for expressing economic status. Slow to construct.</description>
+		<texturePath>Terrain/Surfaces/AM_KemeticFineStoneTiles</texturePath>
+		<dominantStyleCategory>AM_Kemetic</dominantStyleCategory>
+		<obsoletes>
+			<li>AM_KemeticFineTileSandstone</li>
+			<li>AM_KemeticFineTileGranite</li>
+			<li>AM_KemeticFineTileLimestone</li>
+			<li>AM_KemeticFineTileSlate</li>
+			<li>AM_KemeticFineTileMarble</li>
+			<li>AM_KemeticFineTilePristineLimestone</li>
+		</obsoletes>
+	</StuffedFloors.FloorTypeDef>
+	
+	<!-- Steampunk -->
+	<StuffedFloors.FloorTypeDef ParentName="StuffedFloorsStoneIdeologyBase"  MayRequire="sarg.alphamemes,ludeon.rimworld.ideology">
+		<defName>StuffedStoneSteampunkTileAM</defName>
+		<label>steampunk tile</label>
+		<description>Fine stone tiles in a Steampunk style for expressing economic status. Slow to construct.</description>
+		<texturePath>Terrain/Surfaces/AM_SteampunkStoneTiles</texturePath>
+		<dominantStyleCategory>AM_SteampunkRevival</dominantStyleCategory>
+		<obsoletes>
+			<li>AM_SteampunkTileSandstone</li>
+			<li>AM_SteampunkTileGranite</li>
+			<li>AM_SteampunkTileLimestone</li>
+			<li>AM_SteampunkTileSlate</li>
+			<li>AM_SteampunkTileMarble</li>
+		</obsoletes>
+	</StuffedFloors.FloorTypeDef>
+	<StuffedFloors.FloorTypeDef ParentName="StuffedFloorsMetalIdeologyBase"  MayRequire="sarg.alphamemes,ludeon.rimworld.ideology">
+		<defName>StuffedMetalSteampunkTileAM</defName>
+		<label>steampunk tile</label>
+		<description>Fine metal tiles in a Steampunk style for expressing economic status. Slow to construct.</description>
+		<texturePath>Terrain/Surfaces/AM_SteampunkStoneTiles</texturePath>
+		<dominantStyleCategory>AM_SteampunkRevival</dominantStyleCategory>
+		<obsoletes />
+	</StuffedFloors.FloorTypeDef>
+	
+	<!-- Neolithic, needs color override -->
+	
 	
 </Defs>
