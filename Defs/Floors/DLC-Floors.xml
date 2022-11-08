@@ -159,7 +159,7 @@
 		</obsoletes>
 	</StuffedFloors.FloorTypeDef>
 	<StuffedFloors.FloorTypeDef ParentName="StuffedFloorsFabricIdeologyBase" MayRequire="ludeon.rimworld.ideology">
-		<defName>StuffedTranshumanistFabricCarpet</defName>
+		<defName>StuffedTechistFabricCarpet</defName>
 		<label>hex carpet</label>
 		<description>Fine carpet with a hexagonal pattern for that ultra-technological look.</description>
 		<texturePath>Terrain/Surfaces/HexCarpet</texturePath>
