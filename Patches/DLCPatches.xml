@@ -60,6 +60,81 @@
 									<li>StuffedTotemicStoneTiles</li>
 								</value>		
 							</li>
+							
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/MemeDef[defName="Transhumanist"]/addDesignatorGroups</xpath>
+								<value>
+									<li>StuffedTranshumanistFabricCarpet</li>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/StyleCategoryDef[defName="Morbid"]/addDesignatorGroups</xpath>
+								<value>
+									<li>StuffedMorbidFabricCarpet</li>
+								</value>		
+							</li>
+							
+							
+							<!-- Patches for VE Memes & Structures -->
+							<li Class="PatchOperationConditional" MayRequire="vanillaexpanded.vmemese">
+								<xpath>Defs</xpath>
+								<match Class="PatchOperationSequence">
+									<operations>
+										<li Class="PatchOperationReplace">
+											<xpath>Defs/StyleCategoryDef[defName="VME_Corporate"]/addDesignatorGroups/li[text()="VME_Floor_CorporateFineStoneTiles"]</xpath>
+											<value>
+												<li MayRequire="Ludeon.RimWorld.Royalty">StuffedStoneCorporateTileVE</li>
+											</value>		
+										</li>
+										<li Class="PatchOperationAdd">
+											<xpath>Defs/StyleCategoryDef[defName="VME_Shintaoism"]/addDesignatorGroups]</xpath>
+											<value>
+												<li MayRequire="Ludeon.RimWorld.Royalty">StuffedStoneShintaoTileVE</li>
+												<li>StuffedFabricBasicShintaoCarpetVE</li>
+												<li MayRequire="Ludeon.RimWorld.Royalty">StuffedFabricFineShintaoCarpetVE</li>
+											</value>		
+										</li>
+										<li Class="PatchOperationRemove">
+											<xpath>Defs/StyleCategoryDef[defName="VME_Shintaoism"]/addDesignatorGroups]/li[text()="VME_Floor_ShintaoCarpetFine" or text()="VME_Floor_ShintaoCarpet" or text()="VME_Floor_ShintaoFineStoneTiles"]</xpath>
+										</li>
+										
+									</operations>
+								</match>
+							</li>
+							<!-- Patches for Alpha Memes Mod -->
+							<li Class="PatchOperationConditional" MayRequire="sarg.alphamemes">
+								<xpath>Defs</xpath>
+								<match Class="PatchOperationSequence">
+									<operations>
+										<li Class="PatchOperationReplace">
+											<xpath>Defs/StyleCategoryDef[defName="AM_Jewish"]/addDesignatorGroups/li[text()="AM_Floor_JewishTiles"]</xpath>
+											<value>
+												<li>StuffedStoneJewishTileAMPretty</li>
+											</value>		
+										</li>
+										<li Class="PatchOperationReplace">
+											<xpath>Defs/StyleCategoryDef[defName="AM_Kemetic"]/addDesignatorGroups/li[text()="AM_Floor_KemeticTiles"]</xpath>
+											<value>
+												<li>StuffedStoneKemeticTileAMPretty</li>
+											</value>		
+										</li>
+										<li Class="PatchOperationReplace">
+											<xpath>Defs/StyleCategoryDef[defName="AM_Kemetic"]/addDesignatorGroups/li[text()="AM_Floor_KemeticFineTiles"]</xpath>
+											<value>
+												<li MayRequire="Ludeon.RimWorld.Royalty">StuffedStoneKemeticTileAM</li>
+											</value>		
+										</li>
+										<li Class="PatchOperationReplace">
+											<xpath>Defs/StyleCategoryDef[defName="AM_SteampunkRevival"]/addDesignatorGroups/li[text()="AM_Floor_SteampunkTiles"]</xpath>
+											<value>
+												<li>StuffedStoneSteampunkTileAM</li>
+												<li>StuffedMetalSteampunkTileAM</li>
+											</value>		
+										</li>
+										
+									</operations>
+								</match>
+							</li>
 						
 						</operations>
 					</match>
