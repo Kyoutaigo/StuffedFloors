@@ -57,7 +57,7 @@
 			<li>FineFloor</li>
 		</tags>
 	</StuffedFloors.FloorTypeDef>
-	<StuffedFloors.FloorTypeDef Name="StuffedFloorsFabricEpicBase" ParentName="StuffedFloorsLeatheryBase" Abstract="True">
+	<StuffedFloors.FloorTypeDef Name="StuffedFloorsLeatheryEpicBase" ParentName="StuffedFloorsLeatheryBase" Abstract="True">
 		<statBases>
 			<Beauty>4.6</Beauty>
 			<WorkToBuild>4200</WorkToBuild>
