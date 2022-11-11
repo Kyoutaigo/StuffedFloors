@@ -87,7 +87,7 @@
 											</value>		
 										</li>
 										<li Class="PatchOperationAdd">
-											<xpath>Defs/StyleCategoryDef[defName="VME_Shintaoism"]/addDesignatorGroups]</xpath>
+											<xpath>Defs/StyleCategoryDef[defName="VME_Shintaoism"]/addDesignatorGroups</xpath>
 											<value>
 												<li MayRequire="Ludeon.RimWorld.Royalty">StuffedStoneShintaoTileVE</li>
 												<li>StuffedFabricBasicShintaoCarpetVE</li>
@@ -95,7 +95,7 @@
 											</value>		
 										</li>
 										<li Class="PatchOperationRemove">
-											<xpath>Defs/StyleCategoryDef[defName="VME_Shintaoism"]/addDesignatorGroups]/li[text()="VME_Floor_ShintaoCarpetFine" or text()="VME_Floor_ShintaoCarpet" or text()="VME_Floor_ShintaoFineStoneTiles"]</xpath>
+											<xpath>Defs/StyleCategoryDef[defName="VME_Shintaoism"]/addDesignatorGroups/li[text()="VME_Floor_ShintaoCarpetFine" or text()="VME_Floor_ShintaoCarpet" or text()="VME_Floor_ShintaoFineStoneTiles"]</xpath>
 										</li>
 										
 									</operations>
