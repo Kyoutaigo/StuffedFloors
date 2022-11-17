@@ -8,7 +8,7 @@
 	<match Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationInsert">
-				<xpath>*/StuffedFloors.FloorTypeDef[defName = "StuffedWoodFloorParquetDiamond"]</xpath>
+				<xpath>*/StuffedFloors.FloorTypeDef[defName = "StuffedWoodFloorParquetMosaic"]</xpath>
 				<value>
 					<StuffedFloors.FloorTypeDef ParentName="StuffedFloorsWoodPrettyBase">
 						<defName>StuffedWoodFloorVEHerringbone</defName>
